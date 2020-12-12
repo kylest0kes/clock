@@ -60,6 +60,9 @@ body.dark {
 
 /* TOGGLE BOXES */
 .toggle-box { 
+    background-color: var(--background-color);
+    color: var(--hand-color);
+    border-color: var(--hand-color);
     position: absolute;
     bottom: 10px;
     left: 30px;
@@ -67,6 +70,9 @@ body.dark {
 }
 
 .toggle-box-2 {
+    background-color: var(--background-color);
+    color: var(--hand-color);
+    border-color: var(--hand-color);
     position: absolute;
     bottom: 10px;
     right: 30px;
