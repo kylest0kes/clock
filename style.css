@@ -1,0 +1,23 @@
+.toggle-box {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 12%;
+}
+
+.switch-toggle-wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.switch-toggle-wrapper .switch {
+  margin-bottom: 0;
+}
