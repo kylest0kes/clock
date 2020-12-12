@@ -1,17 +1,18 @@
 body {
-    --background-color: white;
+    --background-color: radial-gradient(circle at center center, rgb(165, 164, 164), rgb(83, 83, 83));
     --clock-border: 10px solid black;
     --hand-color: black;
 
-    background-color: var(--background-color);
+    background: var(--background-color);
+    height: 100vh;
 }
 
 body.dark {
-    --background-color: black;
+    --background-color: radial-gradient(circle at center center, rgb(71, 71, 71),rgb(8, 8, 8));
     --clock-border: 10px solid white;
     --hand-color: white;
 
-    background-color: var(--background-color);
+    background: var(--background-color);
 }
 
 /* DIGITAL CLOCK */
@@ -95,3 +96,5 @@ body.dark {
 .switch-toggle-wrapper .switch {
   margin-bottom: 0;
 }
+
+
