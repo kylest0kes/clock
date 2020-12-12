@@ -1,8 +1,27 @@
+body {
+    --background-color: white;
+    --clock-border: 10px solid black;
+    --hand-color: black;
+
+    background-color: var(--background-color);
+}
+
+body.dark {
+    --background-color: black;
+    --clock-border: 10px solid white;
+    --hand-color: white;
+
+    background-color: var(--background-color);
+}
+
+/* DIGITAL CLOCK */
+
+
 /* ANALOG CLOCK */
 .analog-clock {
     width: 30rem;
     height: 30rem;
-    border: 10px solid black;
+    border: var(--clock-border);
     border-radius: 50%;
     margin: 50px auto;
     position: relative;
@@ -24,7 +43,7 @@
 .hand {
     width: 50%;
     height: 6px;
-    background: black;
+    background: var(--hand-color);
     position: absolute;
     top: 50%;
     transform-origin: 100%;
@@ -43,14 +62,14 @@
 .toggle-box { 
     position: absolute;
     bottom: 10px;
-    left: 10px;
+    left: 30px;
     width: 190px;
 }
 
 .toggle-box-2 {
     position: absolute;
     bottom: 10px;
-    right: 10px;
+    right: 30px;
     width: 190px;
 }
 

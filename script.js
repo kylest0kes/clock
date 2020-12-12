@@ -16,3 +16,9 @@ function setDate() {
 };
 
 setInterval(setDate, 1000);
+
+// TOGGLE FUNCTIONALITY
+document.querySelector('.theme-toggle').addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+});
+
