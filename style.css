@@ -34,7 +34,9 @@
 }
 
 .hour-hand {
-    padding-right: 50px;
+    width: 25%;
+    left: 100px;
+    
 }
 
 /* TOGGLE BOXES */
