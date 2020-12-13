@@ -16,24 +16,20 @@ body.dark {
     background: var(--background-color);
 }
 
-
+.hide {
+    display: none;
+}
 
 /* DIGITAL CLOCK */
 .digital-clock {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: black;
+    color: var(--hand-color);
     font-size: 70px;
-    border: 2px solid dashed;
-    margin-left: 20px;
-    transform: translateX(-50%), translateY(-50%);
     padding: 0px 5px 0px 5px;
+    text-align: center;
 }
 
 /* ANALOG CLOCK */
 .analog-clock {
-    /* display: none; */
     width: 30rem;
     height: 30rem;
     border: var(--clock-border);
@@ -47,7 +43,7 @@ body.dark {
     position: relative;
     width: 100%;
     height: 100%;
-    transform: translateY(-3px); /* account for the height of the clock hands */
+    transform: translateY(-3px);
 }
 
 .hand {

@@ -19,7 +19,7 @@ function setAnalogTime() {
     secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
 };
 
-// setInterval(setAnalogTime, 1000);
+setInterval(setAnalogTime, 1000);
 
 function setDigitalTime() {
     let now = new Date();
@@ -52,7 +52,15 @@ function setDigitalTime() {
 setDigitalTime();
 
 // TOGGLE FUNCTIONALITY
+const analogClock = document.querySelector('analog-clock');
+const digitalClock = document.querySelector('digital-clock');
+
 document.querySelector('.theme-toggle').addEventListener('click', () => {
     document.body.classList.toggle('dark');
+});
+
+document.querySelector('.clock-toggle').addEventListener('click', () => {
+    document.getElementById('d-c').classList.toggle('hide');
+    document.getElementById('a-c').classList.toggle('hide');
 });
 
