@@ -71,7 +71,6 @@ document.querySelector('.clock-toggle').addEventListener('click', () => {
 
 // SWAP CLOCK TOGGLE TEXT
 function swapClockText() {
-    console.log(clockTextToggle)
     if (clockTextToggle.innerHTML === "Digital") {
         clockTextToggle.innerHTML = "Analog";
     } else {
@@ -80,7 +79,6 @@ function swapClockText() {
 }
 
 function swapModeText() {
-    console.log(modeTextToggle)
     if (modeTextToggle.innerHTML === "Light Mode") {
         modeTextToggle.innerHTML = "Dark Mode";
     } else {
