@@ -71,17 +71,17 @@ document.querySelector('.clock-toggle').addEventListener('click', () => {
 
 // SWAP CLOCK TOGGLE TEXT
 function swapClockText() {
-    if (clockTextToggle.innerHTML === "Digital") {
-        clockTextToggle.innerHTML = "Analog";
+    if (clockTextToggle.innerHTML === "Analog") {
+        clockTextToggle.innerHTML = "Digital";
     } else {
-    clockTextToggle.innerHTML = "Digital";
+    clockTextToggle.innerHTML = "Analog";
     }
 }
 
 function swapModeText() {
-    if (modeTextToggle.innerHTML === "Light Mode") {
-        modeTextToggle.innerHTML = "Dark Mode";
+    if (modeTextToggle.innerHTML === "Dark Mode") {
+        modeTextToggle.innerHTML = "Light Mode";
     } else {
-    modeTextToggle.innerHTML = "Light Mode";
+    modeTextToggle.innerHTML = "Dark Mode";
     }
 }
