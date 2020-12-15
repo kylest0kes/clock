@@ -1,8 +1,14 @@
-// CLOCK FUNCTIONALITY
 const hourHand = document.querySelector('.hour-hand');
 const minuteHand = document.querySelector('.min-hand');
 const secondHand = document.querySelector('.second-hand');
 
+const digital = document.getElementById('d-c');
+const analog = document.getElementById('a-c');
+
+let clockTextToggle = document.getElementById('clock-mode');
+let modeTextToggle = document.getElementById('l/d-mode');
+
+// CLOCK FUNCTIONALITY
 function setAnalogTime() {
     let now = new Date();
     
@@ -52,15 +58,32 @@ function setDigitalTime() {
 setDigitalTime();
 
 // TOGGLE FUNCTIONALITY
-const analogClock = document.querySelector('analog-clock');
-const digitalClock = document.querySelector('digital-clock');
-
 document.querySelector('.theme-toggle').addEventListener('click', () => {
     document.body.classList.toggle('dark');
+    swapModeText();
 });
 
 document.querySelector('.clock-toggle').addEventListener('click', () => {
-    document.getElementById('d-c').classList.toggle('hide');
-    document.getElementById('a-c').classList.toggle('hide');
+    digital.classList.toggle('hide');
+    analog.classList.toggle('hide');
+    swapClockText();
 });
 
+// SWAP CLOCK TOGGLE TEXT
+function swapClockText() {
+    console.log(clockTextToggle)
+    if (clockTextToggle.innerHTML === "Digital") {
+        clockTextToggle.innerHTML = "Analog";
+    } else {
+    clockTextToggle.innerHTML = "Digital";
+    }
+}
+
+function swapModeText() {
+    console.log(modeTextToggle)
+    if (modeTextToggle.innerHTML === "Light Mode") {
+        modeTextToggle.innerHTML = "Dark Mode";
+    } else {
+    modeTextToggle.innerHTML = "Light Mode";
+    }
+}

@@ -4,7 +4,7 @@
 
 ## Description
 
-This is a clock application built with css and javascript.  User is able to get the accurate time, as well as toggle between light/dark mode and a digital or analog clock. Foundation Framework was used as well.
+This is a clock application built with css and javascript.  User is able to get the accurate time, as well as toggle between light or dark mode and a digital or analog clock. Foundation Framework was used as well.
 
 ## Table of Contents
 
